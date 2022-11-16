@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<head>
+<title>Background</title>
+<script src="https://kit.fontawesome.com/be76ffc880.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/be76ffc880.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<style>
+
+  body {
+   background-color: #811112; 
+  }
+
+  .maincontent {
+    background-color: #B29576;
+    width: 87%;
+    border-radius: 4px;
+  }
+
+  .maincontent p {
+    margin: 0px 95px 0px;
+  }
+    
+
+    .nav {
+        background-color: #91704e72;
+        text-align: center;
+        padding: 3px 0px 3px; }
+
+.nav a {
+    color: #590707;
+    text-decoration: none;
+
+}
+
+.nav a:hover {
+    color: rgb(155, 10, 10);
+}
+
+.intro a {
+    text-decoration: none;
+    color: #ac3834;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 26px;
+    border-radius: 2px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #811112;
+}
+
+</style>
+
+<body>
+
+    <center>
+    <div class="maincontent">
+        <div class="nav">
+            <br>
+            <p><span style="word-spacing: 350px; font-size: 20px; font-family: 'Lexend Zetta', sans-serif; color: #1f0304;">ALPAS </span><span style="word-spacing: 20px;"><a href="index.html">Home</a> <a href="background.html">Background</a> <a href="sip.html">SIP</a> <a href="mapeh.html">MAPEH</a> <a href="contributingmembers.html">Members</a></span></p>
+            <br>
+        </div>
+
+        <hr style="height:2px;border-width:0;color:gray;background-color:#b38e8179">
+        <div class="title">
+            <br> <br>
+            <h1 style="text-decoration: underline;">Background, Significance, and Intervention 
+				<br>of our Project Proposal 
+			</h1>
+            <br> <br>
+
+            <div>
+              <center><img src="present.jpeg" width="800px" ></center>
+              <div class="carousel">
+                <div class="carousel-inner">
+                    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                    <div class="carousel-item">
+                        <img src="study.png">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="significance.png">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="intervention.png">
+                    </div>
+                    <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                    <label for="carousel-2" class="carousel-control next control-1">›</label>
+                    <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                    <label for="carousel-3" class="carousel-control next control-2">›</label>
+                    <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                    <label for="carousel-1" class="carousel-control next control-3">›</label>
+                    <ol class="carousel-indicators">
+                        <li>
+                            <label for="carousel-1" class="carousel-bullet">•</label>
+                        </li>
+                        <li>
+                            <label for="carousel-2" class="carousel-bullet">•</label>
+                        </li>
+                        <li>
+                            <label for="carousel-3" class="carousel-bullet">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <center>
+            <br><br><br>
+        <img src="doli.jpeg" width="80%" style="border-radius:4px;">
+        <br><br><br></center>
+        <br><br><br>
+    </center>
+    
+
+
+</body>
+</html>
+

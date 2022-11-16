@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marhey&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/be76ffc880.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    body {
+        background-color: #811112;
+    }
+
+    .maincontent {
+        background-color: #B29576;
+        border-radius: 4px;
+        margin: 0px 30px 0px;
+        width: 87%;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: #510809;
+    }
+
+    .nav {
+        background-color: #91704e72;
+        text-align: center;
+        padding: 3px 0px 3px; }
+
+.nav a {
+    color: #590707;
+    text-decoration: none;
+
+
+}
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .header {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0; }
+
+   .header h1 {
+        font-family: 'Lexend Zetta', sans-serif; 
+        color: #ecd4ba; }
+    p {
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 19px;}
+
+    h2 {
+        font-family: 'Josefin Sans', sans-serif;
+        margin-left: 40px;
+    }
+
+  .content p {
+    margin: 0px 21px 0px;
+  }
+
+  .intro p {
+    margin: 0px 60px 0px;
+  }
+
+
+  input[type='checkbox'] { display: none; } 
+
+  .wrap-collabsible { margin: 
+    1.2rem 0; 
+} 
+
+  .lbl-toggle { display: block; 
+    width: 80%;
+    font-weight: bold; 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem; 
+    text-transform: uppercase; 
+    text-align: center; padding: 1rem; 
+    color: #CAB7A1; background: #590707;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    border-radius: 7px; 
+    transition: all 0.25s ease-out; } 
+    
+    .lbl-toggle:hover { color: #811112; } 
+
+    .lbl-toggle::before { content: ' '; 
+    display: inline-block;
+    border-top: 5px solid transparent; 
+    border-bottom: 5px solid transparent; 
+    border-left: 5px solid currentColor; 
+    vertical-align: middle; margin-right: .7rem; 
+    transform: translateY(-2px); transition: transform .2s ease-out; } 
+    
+    .toggle:checked+.lbl-toggle::before { 
+        transform: rotate(90deg) translateX(-3px); } 
+        
+    .collapsible-content { 
+        width: 82.7%;
+        max-height: 0px; 
+        overflow: hidden; 
+        transition: max-height .25s ease-in-out; } 
+        
+    .toggle:checked + .lbl-toggle + .collapsible-content { 
+        max-height: 2000px; } 
+        
+    .toggle:checked+.lbl-toggle { 
+        border-bottom-right-radius: 0; 
+        border-bottom-left-radius: 0; } 
+        
+    
+    .collapsible-content .content-inner { 
+            background: #9b8064;
+            border-bottom: 1px solid #9b8064; 
+            border-bottom-left-radius: 7px; 
+            border-bottom-right-radius: 7px; 
+            padding: .5rem 1rem; } 
+            
+    .collapsible-content p { margin-bottom: 0; }
+
+    .mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    font-size: 10px;
+    background: #B29576;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #9b80647e;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #947356ab;
+}
+
+
+
+
+
+</style>
+
+<body>
+
+    <center>
+<div class="maincontent">
+    <div class="nav">
+        <p><span style="word-spacing: 350px; font-size: 20px; font-family: 'Lexend Zetta', sans-serif; color: #1f0304;">ALPAS </span><span style="word-spacing: 20px;"><a href="index.html">Home</a> <a href="background.html">Background</a> <a href="sip.html">SIP</a> <a href="mapeh.html">MAPEH</a> <a href="contributingmembers.html">Members</a></span></p>
+    </div>
+    <img src="yaa.png" width = "855" height = "300" class="center"> <br>
+   <div class="header">
+    <h1>Science Investigatory Project</h1> <p>By Group 4A of Grade 9 Xavier</p></div>
+
+
+   <center> <div class="wrap-collabsible"> <input id="collapsible" class="toggle" type="checkbox"> <label for="collapsible" class="lbl-toggle">Background</label>
+        <div class="collapsible-content"><div class="content-inner"><p> 
+            Composting has several benefits for the health and cleanliness of our environment, but what are these benefits? According to Savage (2022), the food waste recycled in compost rather than being thrown out decreases the number of compostable waste being sent to landfills, which can lessen greenhouse gas emissions. Another benefit from the same source indicates how composting also positively affects our plants. They're able to grow faster and large from the organic material being fed. For example, the potassium that can be found in Banana peels is a key macronutrient essential for plant growth. According to "7 Ways Potassium Promotes Healthy Crops" (n.d), ATP can maintain an electrical charge through the potassium ions, if a plant lacks potassium it also slows down the rate of ATP production and photosynthesis. Composting allows us to recycle the vitamins and minerals from these waste or food scraps, and throw them back into the soil (“Top Five Reasons to Compost”, n.d). Composting is something everyone can do easily, and is a great way of recycling this waste organically. Composting is a practice everyone should do or be familiar with, especially with the countless amount of benefits it has towards making our surroundings cleaner and healthier.
+<br><br>
+We have learned through our resources how the abused victims at Talikala, our partner institution, can profit from composting and heal in ways like lowering their landfill wastes and for the development of their plant's growth. Our recommended composting technique can produce better, more resilient plants. Since the Talikala community is a non-profit organization, it is advantageous for them to save energy, time, and money as components in composting are no longer carried to landfill wastes. Additionally, according to numerous academic resources, gardening (together with the composting process) results in healing and self-empowerment. According to a Japanese study, just glancing at plants can reduce stress and bad emotions by altering electrical activity in the brain, further strengthening my statement. Along with this, oppressed and abused women will be able to practice coping with their psychological issues in a sustainable and healthy manner, resolving probable future conflict and challenges caused by mental issues. As a group, we work to support these ladies in conquering their past and moving forward onto a healthier and more empowered journey; to break the chains of oppression in women, while also assisting them in one of their hobbies, like gardening, to grow healthy and delicious plants. And if the individuals wanted to, they will have an opportunity to turn this hobby into a business, paving the way for them to gain profit for the people involved in Talikala.
+
+        </p></div></div></div></center>
+
+    <div class="intro">
+            
+        </p>
+        <br>
+        </div>
+
+        <hr style="height:2px;border-width:0;color:#91704e72;background-color:#91704e72">
+
+
+    <div class="content">  
+        <div class="details">
+        <h2>Project Details</h2>
+        <p>
+            <b>STATEMENT OF THE PROBLEM - </b> Which among the composting methods, whether hot or cold compost, would affect the Spring Onions (Allium Fistulosum’s) height in its growth (to be measured in centimeters)?
+            <br><br><br>
+            <b> HYPOTHESIS -</b>
+            If we use hot composting as a composting method, for the height growth of Spring Onion (Allium Fistulosum) (to be measured in centimeters), then its height will increase exponentially and sustainably
+        </p>
+        </div>
+            <hr style="height:2px;border-width:0;color:#91704e72;background-color:#91704e72">
+
+        <h2>Variables
+        </h2>
+        <p style="text-align: left; margin: 0px 60px 0px;">
+            <b>Independent Variable: <br></b>
+            Type of Composting Method: Hot and Cold Composting Method<br><br>
+            <b>Dependent Variable/s<br></b>
+            The Height of the Spring Onion (Allium Fistulosum) to be measured in centimeters<br><br>
+            <b>Constant or Controlled Variables<br></b>
+            -Brown and Green Compost Materials and Size; Small Shredded newspaper, Food scraps (Banana & Potato Peeling).<br>
+            -Amount of water - 1 to 2 inches of water.<br>
+            -Amount of Time (6 weeks)<br>
+            -Type of location (Spacious area with full exposure of sunlight).<br>
+            -Amount of sunlight (6 - 7 hours of exposure).<br>
+            -Number of days to be observed (every week).<br>
+            -Amount of Allium Fistulosum bulbs (3) to be grown.<br>
+            -Type of soil (loamy soil)<br>
+            -Amount of soil (1kg per pot)<br>
+            -Shape and size of the composts (1 cubic feet, rectangular shaped)<br>
+            
+            </p><br><br>
+
+            <hr style="height:2px;border-width:0;color:#91704e72;background-color:#91704e72">
+            <div class="mytabs">
+                <input type="radio" id="tabfree" name="mytabs" checked="checked">
+                <label for="tabfree"><p style="font-size: 16px;">Hot Compost</p></label>
+                <div class="tab">
+                  <h2>Hot Compost</h2>
+                  <p style="font-size:13px">(No Plant Set-Up ATM since we're still composting)</p>
+                    <center><img src="hot.png" width="334" height="548"></center><br>
+                  <p>Amount of Organic Material - 2/3 brown (carbon-newspapers)  to 1/3 green materials (nitrogen -food scraps like banana peel and potato peeling).
+                    <br><br>
+                    Type of Organic Material - Small Shredded newspaper, Food scraps (Banana & Potato Peeling).
+                    <br><br>
+                    Water (in mL) - 16.4ml 
+                    <br><br>
+                    Number of Days to compost - 3-4 weeks 
+                    <br><br>
+                    Compost Temperature -  131-149 °F
+                    </p>
+                </div>
+            
+                <input type="radio" id="tabsilver" name="mytabs">
+                <label for="tabsilver"><p style="font-size: 16px";>Cold Compost</p></label>
+                <div class="tab">
+                  <h2>Cold Compost</h2>
+                  <p style="font-size:13px">(No Plant Set-Up ATM since we're still composting)</p>
+                   <center><img src="cold.png" width="384" height="698"></center>
+                  <p>Amount of Organic Material -2/3 brown (carbon-newspapers)  to 1/3 green materials (nitrogen -food scraps like banana peel and potato peeling).
+                    <br><br>
+                    Type of Organic Material - Small Shredded newspaper, Food scraps (Banana & Potato Peeling).
+                    <br><br>
+                    Water (in mL) - 16.4ml
+                    <br><br>
+                    Number of Days to compost - 4-5 weeks
+                    <br><br>
+                    Compost Temperature - 90°F or lower
+                    </p>
+                </div>
+            
+                <input type="radio" id="tabgold" name="mytabs">
+                <label for="tabgold"><p style="font-size: 16px">No Compost</p></label>
+                <div class="tab">
+                  <h2>N/A ATM since we're still composting</h2>
+                  <p></p>
+                </div>
+            
+              </div>
+      </div>
+      <hr style="height:2px;border-width:0;color:#91704e72;background-color:#91704e72">
+      <br><br>
+
+      <img src="dneen.jpeg" width="80%" style="border-radius:4px;">
+      <br><br><br>
+    </center>
+
+</div>
+
+
+
+    
+</body>
+
+
+</html>

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
+
+@keyframes transitionIn {
+    from {
+
+        opacity:0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  body {
+    animation: transitionIn 0.95s;
+    font-size: 16px;
+    color:#881D1D;
+}
+
+
+h1 {
+    font-family: 'Lexend Zetta', sans-serif;
+    text-align: center;
+    color: #380707; }
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 19px;
+    color: #590707;}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 40px;
+}

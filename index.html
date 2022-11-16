@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>
+<title>Background</title>
+<script src="https://kit.fontawesome.com/be76ffc880.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/be76ffc880.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<style>
+
+  body {
+   background-color: #811112; 
+  }
+
+  .maincontent {
+    background-color: #B29576;
+    border-radius: 4px;
+    width: 87%;
+  }
+    .intro p {
+    margin: 0px;
+    padding: 0px;
+    font-size: larger;
+    text-align: center;
+    color: #590707;
+    }
+
+    .gallery img {
+    float: left;
+    margin: 20px;
+    display: block;
+    padding: 0;
+    border-radius: 4px;  }
+    
+
+    .nav {
+        background-color: #91704e72;
+        text-align: center;
+        padding: 3px 0px 3px; }
+
+.nav a {
+    color: #590707;
+    text-decoration: none;
+
+}
+
+.nav a:hover {
+    color: rgb(155, 10, 10);
+}
+
+.intro a {
+    text-decoration: none;
+    color: #ac3834;
+}
+
+
+
+.accordion {
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Josefin", sans-serif;
+    background: #AC3834;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .accordion__label,
+  .accordion__content {
+    padding: 14px 20px;
+    
+  }
+  
+  .accordion__label {
+    display: block;
+    color: #e8e0dc;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .accordion__label:hover {
+    background: rgba(119, 63, 17, 0.1);
+
+  }
+  
+  .accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+  }
+  
+  .accordion__content {
+    background: #ffffff;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+    font-size: 10px;
+  }
+  
+  .accordion__input {
+    display: none;
+  }
+  
+  .accordion__input:checked ~ .accordion__content {
+    display: block;
+  }
+  
+  .accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+  }
+
+.accordion p {
+  font-size: 15px;
+}
+  
+</style>
+<body>
+  <center>
+    <div class="maincontent">
+        <div class="nav">
+            <p><span style="word-spacing: 350px; font-size: 20px; font-family: 'Lexend Zetta', sans-serif; color: #1f0304;">ALPAS </span><span style="word-spacing: 20px;"><a href="index.html">Home</a> <a href="background.html">Background</a> <a href="sip.html">SIP</a> <a href="mapeh.html">MAPEH</a> <a href="contributingmembers.html">Members</a></span></p>
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#b38e8179">
+        <div class="title">
+            <br> <br>
+            <h1 style="text-decoration: underline;">Project Alpas</h1>
+            <p>By Group 4A</p>
+            <br> <br>
+        </div>
+
+        <div class="intro">
+        <p>Project Alpas is a project proposal created by the <a href="contributingmembers.html">members </a>
+        <br>of Group 4A. With the purpose of supporting Talikala and
+        <br>their cause. For more details please visit the <a href="b">Background</a>
+         <br> page.
+        </p>
+        <br>
+        <br>
+        </div>
+
+        <div class="accordion">
+            <div>
+              <input type="radio" name="example_accordion" id="section1" class="accordion__input">
+              <label for="section1" class="accordion__label">What is Talikala</label>
+              <div class="accordion__content">
+                <p>
+                  Talikala is an organization by women for women, and also children, who have been exposed to
+   prostitution,  as they aim to work together  in  developing a woman’s resilience  from  the
+   traumatic  abuse,  brutality,  and  mistreatment  they have encountered.  This  institution
+   protects women's and children's human rights and prevents all forms of violence against them;
+   this is to improve the quality of life of victims and survivors of trafficking and prostitution.<br>
+  
+
+                </p>
+              </div>
+            </div>
+            <div>
+    
+              <input type="radio" name="example_accordion" id="section2" class="accordion__input">
+              <label for="section2" class="accordion__label">The stigma of prostitution</label>
+              <div class="accordion__content">
+              <p>
+                There's a stigma everyone's familiar with that those people who dabble in prostitution are dirty or unholy. That they could 
+    just get a new job or find some other way to earn cash. Although some people choose this
+    career, most are usually forced into it due to unemployment or being uneducated to the point wherein you're unable to find a job. <br><br>
+
+    Everyone deserves respect no matter who they are, and since we're in a position where we can help, why not use this to our
+    advantage to provide for the needs of this institution.
+    <br><br>
+    Ways we can help:
+    Through donating and supporting Talikala and other project proposals that benefit this institution whether it'd be in social media or monetary donations.<br><br>
+              </p>
+              </div>
+            </div>
+            <div>
+              <input type="radio" name="example_accordion" id="section3" class="accordion__input">
+              <label for="section3" class="accordion__label">Other Details about Talikala</label>
+              <div class="accordion__content">
+                <p>
+                  <i class="fa-solid fa-phone"></i> (082) 287 4653<br>
+                  <i class="fa-solid fa-globe"></i> talikala.net<br>
+                  <i class="fa-solid fa-envelope"></i> talikaladavao@gmail.com <br>
+                  <i class="fa-solid fa-location-dot"></i> Sputnik Street corner Panganiban Street, Doña <br>
+                  Vicenta Village, Davao City, Philippines <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+          <center>
+            <hr style="height:2px; border-width:0;color:#91704e72;background-color:#91704e72; width: 100%;">
+            <br><br>
+        <img src="dden.jpeg" width="80%" style="border-radius:4px;">
+        <br><br><br></center>
+
+          <p style="padding-bottom: 20px;"></p>
+          
+    </div>
+
+  </div>
+  <div class="gallery">      
+  </div>
+  </center>
+
+</body>
+</html>
+
+
+
+.gallery img {
+  float: left;
+  margin: 20px;
+  display: block;
+  padding: 0;
+  border-radius: 4px;  }

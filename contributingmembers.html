@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+<title>Contributing Members</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin', sans-serif; ;
+    background-color: #811112;
+}
+
+.maincontent {
+    background-color: #B29576;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 4px ;
+}
+
+.container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.container .card{
+	width: 230px;
+	height: 350px;
+	position: relative;
+	border-radius: 10px;
+	background-color: #811112 ;
+	overflow: hidden;
+	box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.37);
+	margin:15px;
+}
+.card::after{
+	content: " ";
+	width: 100%;
+	height: 40%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #881D1D;
+}
+.card img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: fit;
+	transition: .6s;
+	box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.37);
+	z-index: 99;
+}
+.card:hover img{
+	transform: scale(.50) translateY(-120px);
+	border-radius: 10px;
+}
+.card .details{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 40px;
+	transform: translateY(100%);
+	transition: .6s;
+}
+.card:hover .details{
+	transform: translateY(0);
+}
+
+.details p{
+	font-size: 13px;
+	color: #dccdbb;
+    padding: 0px 5px 0px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.details{
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	border-radius: 50%;
+	text-decoration: none;
+	transition: .6s;
+	display: grid;
+	place-items: center;
+	font-size: 17px;
+}
+
+.details h3 {
+    font-family: 'Josefin Sans', sans-serif; ;
+    color:#c9b39c;
+}
+
+.nav {
+        background-color: #91704e72;
+        text-align: center;
+        padding: 3px 0px 3px; }
+
+.nav a {
+    color: #590707;
+    text-decoration: none;
+
+
+}
+
+.nav a:hover {
+    color: rgb(155, 10, 10);
+}
+
+
+</style>
+
+<body>
+    <div class="maincontent">
+        <div class="nav">
+            <br>
+            <p><span style="word-spacing: 350px; font-size: 20px; font-family: 'Lexend Zetta', sans-serif; color: #1f0304;">ALPAS </span><span style="word-spacing: 20px;"><a href="index.html">Home</a> <a href="background.html">Background</a> <a href="sip.html">SIP</a> <a href="mapeh.html">MAPEH</a> <a href="contributingmembers.html">Members</a></span></p>
+            <br>
+        </div>
+                <br> <br>
+        <h1>Contributing Members</h1>
+        
+        <div class="container">
+            <div class="card">
+                <img src="deyb.jpg">
+                <div class="details">
+                    <h3>Oliver Binancilan</h3>
+                    <p>Hi! I am Deyb and I am the content creator for the background page! I am a part of Group 4A of
+                    9 Francis Xavier. Fun Facts: I am an ENFP and was born on December 5 2006.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="neen.jpg">
+                <div class="details">
+                    <h3>Janeen Dacanay</h3>
+                    <p>Hi! I am Neen and I am the content creator for the SIP page! I am a part of Group 4A of 9 Francis
+                    Xavier. Fun Facts: I am an INTJ and was born on January 15, 2008.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="den.jpg">
+                <div class="details">
+                    <h3>Denise Lanaban</h3>
+                    <p>Hi! I am Den and I designed the homepage including the other webpages! I am a part of Group 4A 
+                    of 9 Francis Xavier. Fun Facts: I am an ENFP and was born on July 16, 2008     </p>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <img src="pollen.jpeg">
+                <div class="details"> 
+                    <h3>Pauleen Rotante</h3>                  
+                     <p>Hi! I am Pau and I am the content creator for the contributing members page!
+                    I am a part of Group 4A of 9 Francis Xavier. Fun Facts: I am an INFJ and was born on June 12, 2007</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="sim.jpg">
+                <div class="details">
+                    <h3>Simran Sohal</h3>
+                    <p>Hi! I am Sim and I am the content creator for the MAPEH page! I am a part of
+                    Group 4A of 9 Francis Xavier. Fun Facts: I am an ESTJ and was born on July 11, 2007</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center>
+            <hr style="height:2px; border-width:0;color:#91704e72;background-color:#91704e72; width: 50%;">
+
+        <img src="dpau.jpeg" width="80%" style="border-radius:4px;">
+        <br><br><br></center>
+    </div>
+</body>
+</html>
+
